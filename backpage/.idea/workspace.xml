@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="b63d5528-95c4-47d9-9854-d6221fcc269f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/MyApplication.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/config/exception/CommonJsonException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/config/exception/GlobalExceptionHandler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/config/exception/MainsiteErrorController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/config/shiro/AjaxPermissionsAuthorizationFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/config/shiro/ShiroConfiguration.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/config/shiro/UserRealm.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/config/system/DefaultView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/controller/LoginController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/controller/OrgController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/controller/StudentController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/controller/SysGeneratorController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/controller/UserController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/controller/WebChatController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/controller/WebChatTxlController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/controller/WebchatConfigController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/dao/mysql/LoginDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/dao/mysql/OrgDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/dao/mysql/PermissionDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/dao/mysql/StudentDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/dao/mysql/SysGeneratorDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/dao/mysql/UserDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/dao/mysql/WebChatCacheDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/dao/mysql/WebChatDepDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/dao/mysql/WebChatUserDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/dao/mysql/WebchatConfigDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/datasource/DataSourceConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/datasource/MyBatisMysqlAConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/datasource/MyBatisPaibanAConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/model/ColumnEntity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/model/TableEntity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/schedule/ScheduleTask.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/LoginService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/OrgServie.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/PermissionService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/StudentService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/SysGeneratorService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/UserService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/WebChatService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/WebChatTxlService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/WebchatConfigService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/impl/LoginServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/impl/OrgServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/impl/PermissionServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/impl/StudentServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/impl/SysGeneratorServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/impl/UserServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/impl/WebChatServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/impl/WebChatTxlServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/service/impl/WebchatConfigServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/util/CommonUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/util/DateUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/util/DateUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/util/GeneratorUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/util/RandomUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/util/StringTools.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/util/constants/Constants.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/util/constants/ErrorEnum.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/util/model/One2Many.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/webchat/WebChatCommon.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/webchat/WebChatSign.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/com/shrek/example/webchat/WebChatUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/example-1.0.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/example-1.0.0-SNAPSHOT.jar.original" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/test-classes/com/shrek/example/service/BusCheckInfoServiceTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/test-classes/com/shrek/example/service/BusStopAreaInfoServiceTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/test-classes/com/shrek/example/service/BusStopAreaServiceTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/test-classes/com/shrek/example/service/LoginServiceTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/test-classes/com/shrek/example/service/PaiBanBusInfoServiceTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/test-classes/com/shrek/example/service/PaiBanInfoServiceTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/test-classes/com/shrek/example/service/PaiBanLineBusPianServiceTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/test-classes/com/shrek/example/service/StudentServiceTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/test-classes/com/shrek/example/service/UserServiceTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/test-classes/com/shrek/example/service/WebChatServiceTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/test-classes/com/shrek/example/service/WebChatTxlServiceTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/test-classes/com/shrek/example/service/impl/BusServiceImplTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/fonts/element-icons.6f0a763.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/img/404.a57b6f3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/404_images/404.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/404_images/404_cloud.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-cool.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-cry.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-embarassed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-foot-in-mouth.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-frown.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-innocent.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-kiss.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-laughing.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-money-mouth.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-sealed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-surprised.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-tongue-out.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-undecided.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-wink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/emoticons/img/smiley-yell.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/fonts/tinymce-mobile.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/fonts/tinymce-small.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/fonts/tinymce-small.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/fonts/tinymce-small.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/fonts/tinymce.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/fonts/tinymce.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/fonts/tinymce.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/img/anchor.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/img/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/img/object.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/img/trans.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_google_guava_guava_22_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_microsoft_sqlserver_mssql_jdbc_6_2_0_jre8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__commons_configuration_commons_configuration_1_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_31.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_31.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_31.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_spring_aop_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_spring_beans_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_spring_context_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_spring_core_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_spring_expression_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_spring_test_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_spring_tx_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_spring_web_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.settings/org.eclipse.core.resources.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.settings/org.eclipse.m2e.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.settings/org.eclipse.wst.common.project.facet.core.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/.springBeans" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/example.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/logs/2019-01/heeexy-2019-01-24.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/logs/2019-01/heeexy-2019-01-25.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/MyApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/config/exception/CommonJsonException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/config/exception/GlobalExceptionHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/config/exception/MainsiteErrorController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/config/shiro/AjaxPermissionsAuthorizationFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/config/shiro/ShiroConfiguration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/config/shiro/UserRealm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/config/system/DefaultView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/controller/LoginController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/controller/OrgController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/controller/StudentController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/controller/SysGeneratorController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/controller/UserController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/controller/WebChatController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/controller/WebChatTxlController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/controller/WebchatConfigController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/dao/mysql/LoginDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/dao/mysql/OrgDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/dao/mysql/PermissionDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/dao/mysql/StudentDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/dao/mysql/SysGeneratorDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/dao/mysql/UserDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/dao/mysql/WebChatCacheDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/dao/mysql/WebChatDepDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/dao/mysql/WebChatUserDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/dao/mysql/WebchatConfigDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/datasource/DataSourceConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/datasource/MyBatisMysqlAConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/datasource/MyBatisPaibanAConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/model/ColumnEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/model/TableEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/schedule/ScheduleTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/LoginService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/OrgServie.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/PermissionService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/StudentService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/SysGeneratorService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/UserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/WebChatService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/WebChatTxlService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/WebchatConfigService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/impl/LoginServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/impl/OrgServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/impl/PermissionServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/impl/StudentServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/impl/SysGeneratorServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/impl/UserServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/impl/WebChatServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/impl/WebChatTxlServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/service/impl/WebchatConfigServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/util/CommonUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/util/DateUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/util/DateUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/util/GeneratorUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/util/RandomUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/util/StringTools.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/util/constants/Constants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/util/constants/ErrorEnum.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/util/model/One2Many.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/webchat/WebChatCommon.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/webchat/WebChatSign.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/java/com/shrek/example/webchat/WebChatUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/application-dev.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/application-prod.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/application.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/generator.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/logback.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/mapper/mysql/LoginMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/mapper/mysql/OrgMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/mapper/mysql/PermissionMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/mapper/mysql/StudentMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/mapper/mysql/SysGeneratorMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/mapper/mysql/UserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/mapper/mysql/WebChatCacheMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/mapper/mysql/WebChatDep.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/mapper/mysql/WebChatUser.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/mapper/mysql/WebchatConfigMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/template/controller.java.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/template/dao.java.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/template/entity.java.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/template/index.js.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/template/index.vue.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/template/mapper.xml.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/template/service.java.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/main/resources/template/serviceimpl.java.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/BusCheckInfoServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/BusStopAreaInfoServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/BusStopAreaServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/BusStopServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/LoginServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/PaiBanBusInfoServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/PaiBanInfoServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/PaiBanLineBusPianServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/PaiBanProjectServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/PaiBanUserServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/StudentServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/UserServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/WebChatServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/WebChatTxlServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/src/test/java/com/shrek/example/service/impl/BusServiceImplTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/application-dev.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/application-prod.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/application.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/generator.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/logback.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/mapper/mysql/LoginMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/mapper/mysql/OrgMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/mapper/mysql/PermissionMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/mapper/mysql/StudentMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/mapper/mysql/SysGeneratorMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/mapper/mysql/UserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/mapper/mysql/WebChatCacheMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/mapper/mysql/WebChatDep.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/mapper/mysql/WebChatUser.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/mapper/mysql/WebchatConfigMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/template/controller.java.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/template/dao.java.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/template/entity.java.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/template/index.js.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/template/index.vue.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/template/mapper.xml.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/template/service.java.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/classes/template/serviceimpl.java.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/maven-archiver/pom.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../back/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.babelrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vue.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.postcssrc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/check-versions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/vue-loader.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/webpack.dev.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/webpack.prod.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/dev.env.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/prod.env.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/heeexy-2019-01-01.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/heeexy-2019-01-02.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/heeexy-2019-01-06.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/heeexy-2019-01-07.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/heeexy-2019-01-08.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/css/app.2c0a49cca7886955715a668862615410.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/css/app.2c0a49cca7886955715a668862615410.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/0.39964540df662d8653a5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/1.97b12daee709e42d648b.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/10.b76612524f1de0f89a1e.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/11.ec3baba98d4c25b8f5b1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/12.65ed00a05812648f8509.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/2.7c7e3910a98331d74f9f.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/3.88d11f8ff14f6066c289.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/4.7acb92bb898072772872.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/5.2c54a9cfd4a194b39f73.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/6.72d9ae065d4a1cfb733d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/7.edcb5a89e7ab5e86688b.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/8.f6bc67bab34d7583a1e3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/9.61f165b871ceddb71521.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/app.77815af53fd9816d2d58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/manifest.6ff33ac10aa5e9dcb24b.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/static/js/vendor.2604f82ff661b9af12a9.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/api/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/auth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/axios.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Breadcrumb/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Hamburger/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ScrollBar/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ScrollPane/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/SvgIcon/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tinymce/components/editorImage.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tinymce/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tinymce/plugins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tinymce/toolbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tree/panel.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tree/selectTree.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tree/sideMenu.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tree/subMenu.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tree/treeter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/svg/example.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/svg/eye.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/svg/form.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/svg/password.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/svg/peoples.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/svg/table.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/svg/tree.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/svg/user.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/permission.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/router/_import_development.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/router/_import_production.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/store/getters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/store/modules/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/store/modules/permission.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/store/modules/tagsView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/store/modules/user.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/element-ui.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/mixin.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/sidebar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/transition.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/auth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/hasPermission.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vendor/Blob.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vendor/Export2Excel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/404.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/article/article.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/dashboard/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/layout/Layout.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/layout/components/AppMain.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/layout/components/Navbar.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/layout/components/Sidebar/SidebarItem.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/layout/components/Sidebar/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/layout/components/TagsView.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/layout/components/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/login/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/student/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/user/codegen.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/user/driver.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/user/org.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/user/role.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/user/user.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/user/webchatConfig.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/user/webchattxll.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/langs/zh_CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/codesample/css/prism.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/plugins/visualblocks/css/visualblocks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/content.inline.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/content.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/fonts/tinymce-small.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/fonts/tinymce.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/skin.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/skins/lightgray/skin.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/tinymce4.7.5/tinymce.min.js" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="TagsView.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/layout/components/TagsView.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="12" column="81" lean-forward="false" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tagsView.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/modules/tagsView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1701">
+              <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/user/user.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1107">
+              <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+              <folding>
+                <element signature="n#style#0;n#el-select#0;n#el-form-item#7;n#el-form#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="codegen.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/user/codegen.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1512">
+              <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+              <folding>
+                <element signature="n#style#0;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/student/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5589">
+              <caret line="207" column="24" lean-forward="false" selection-start-line="207" selection-start-column="17" selection-end-line="207" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="driver.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/user/driver.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1350">
+              <caret line="50" column="79" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/dashboard/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>queryendDate</find>
+      <find>&amp;lt</find>
+      <find>alert</find>
+      <find>downloadLoading</find>
+      <find>Vue.prototype</find>
+      <find>hasPerm</find>
+      <find>timeDefaultShow</find>
+      <find>listQuery</find>
+      <find>FedLogOut</find>
+      <find>login</find>
+      <find>getInfo</find>
+      <find>data</find>
+      <find>userId</find>
+      <find>logout</find>
+      <find>handleSelectionChange</find>
+      <find>multipleSelection</find>
+      <find>name</find>
+      <find>mapGetters</find>
+      <find>waves</find>
+      <find>this.for</find>
+      <find>showUpdate</find>
+      <find>createUser</find>
+      <find>generateTitle</find>
+      <find>formInline</find>
+      <find>TagsView</find>
+      <find>screendp</find>
+      <find>iterable</find>
+      <find>initOrgPk</find>
+      <find>par</find>
+      <find>tempUser</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/views/busmanager/bus.vue" />
+        <option value="$PROJECT_DIR$/src/services/sys.js" />
+        <option value="$PROJECT_DIR$/config/dev.env.js" />
+        <option value="$PROJECT_DIR$/config/prod.env.js" />
+        <option value="$PROJECT_DIR$/src/store/modules/user.js" />
+        <option value="$PROJECT_DIR$/src/views/user/org.vue" />
+        <option value="$PROJECT_DIR$/src/views/report/org.vue" />
+        <option value="$PROJECT_DIR$/src/views/report/ditureport.vue" />
+        <option value="$PROJECT_DIR$/src/views/report/report.vue" />
+        <option value="$PROJECT_DIR$/src/views/report/zhureport.vue" />
+        <option value="$PROJECT_DIR$/src/views/report/binreport.vue" />
+        <option value="$PROJECT_DIR$/src/views/user/webchattxl.html" />
+        <option value="$PROJECT_DIR$/src/views/user/webchattxl.vue" />
+        <option value="$PROJECT_DIR$/src/components/Breadcrumb/index.vue" />
+        <option value="$PROJECT_DIR$/src/views/user/role.vue" />
+        <option value="$PROJECT_DIR$/src/views/user/driver.vue" />
+        <option value="$PROJECT_DIR$/src/views/user/webchattxll.vue" />
+        <option value="$PROJECT_DIR$/src/common/axios.js" />
+        <option value="$PROJECT_DIR$/build/webpack.prod.conf.js" />
+        <option value="$PROJECT_DIR$/build/webpack.dev.conf.js" />
+        <option value="$PROJECT_DIR$/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/src/views/fuwenben/fuwenben.vue" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/views/report/busckgather.vue" />
+        <option value="$PROJECT_DIR$/src/views/report/busckdetail.vue" />
+        <option value="$PROJECT_DIR$/src/components/Tree/selectTree.vue" />
+        <option value="$PROJECT_DIR$/src/views/busmanager/busStop.vue" />
+        <option value="$PROJECT_DIR$/src/views/user/testStudent.vue" />
+        <option value="$PROJECT_DIR$/src/views/user/webchatConfig.vue" />
+        <option value="$PROJECT_DIR$/src/views/layout/components/Navbar.vue" />
+        <option value="$PROJECT_DIR$/src/views/busmanager/busStopArea.vue" />
+        <option value="$PROJECT_DIR$/src/views/report/busstopdetail.vue" />
+        <option value="$PROJECT_DIR$/src/views/login/index.vue" />
+        <option value="$PROJECT_DIR$/src/views/screendp/parkinglot.vue" />
+        <option value="$PROJECT_DIR$/src/views/layout/Layout.vue" />
+        <option value="$PROJECT_DIR$/src/store/index.js" />
+        <option value="$PROJECT_DIR$/src/store/getters.js" />
+        <option value="$PROJECT_DIR$/src/views/layout/components/index.js" />
+        <option value="$PROJECT_DIR$/src/views/busmanager/busCheckInfo.vue" />
+        <option value="$PROJECT_DIR$/src/views/layout/components/TagsView.vue" />
+        <option value="$PROJECT_DIR$/src/views/report/busstopsummary.vue" />
+        <option value="$PROJECT_DIR$/src/views/user/user.vue" />
+        <option value="$PROJECT_DIR$/src/utils/api.js" />
+        <option value="$PROJECT_DIR$/src/views/user/codegen.vue" />
+        <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/config/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="45" />
+    <option name="width" value="1400" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringJavaAutowiringInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="backpage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backpage" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="nodejs_interpreter_path" value="C:/nodejs/node" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="C:\code\SpringBoot-Shiro-Vue-master\SpringBoot-Shiro-Vue-master\vue\node_modules\eslint" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="TagsView&#9;FILE&#9;file://D:/new/backpage/src/views/layout/components/TagsView.vue" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\SpringBoot-Shiro-Vue-master\SpringBoot-Shiro-Vue-master\vue\src\components\Tree" />
+      <recent name="C:\code\SpringBoot-Shiro-Vue-master\SpringBoot-Shiro-Vue-master\vue\src\components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\new\backpage\src\views" />
+      <recent name="D:\new\backpage\src\views\user" />
+      <recent name="D:\code\backpage\src\store\modules" />
+      <recent name="D:\code\backpage\src\components" />
+      <recent name="D:\code\backpage\src\views\layout\components" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\吴署\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b63d5528-95c4-47d9-9854-d6221fcc269f" name="Default" comment="" />
+      <created>1537107224896</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537107224896</updated>
+      <workItem from="1537107226248" duration="25173000" />
+      <workItem from="1537231655355" duration="25128000" />
+      <workItem from="1537318107019" duration="10881000" />
+      <workItem from="1537406347844" duration="2525000" />
+      <workItem from="1537492567774" duration="7885000" />
+      <workItem from="1537585140261" duration="6084000" />
+      <workItem from="1537669568199" duration="4225000" />
+      <workItem from="1537752268679" duration="5982000" />
+      <workItem from="1537836886346" duration="6078000" />
+      <workItem from="1537882886315" duration="3021000" />
+      <workItem from="1537922862521" duration="6735000" />
+      <workItem from="1538009865678" duration="15098000" />
+      <workItem from="1538706968621" duration="10914000" />
+      <workItem from="1539047869914" duration="9364000" />
+      <workItem from="1539133218986" duration="10700000" />
+      <workItem from="1539219009308" duration="8836000" />
+      <workItem from="1539306514701" duration="7808000" />
+      <workItem from="1539566416494" duration="1828000" />
+      <workItem from="1539651282450" duration="5308000" />
+      <workItem from="1539679894537" duration="243000" />
+      <workItem from="1539680148920" duration="733000" />
+      <workItem from="1539847140661" duration="5680000" />
+      <workItem from="1539911582796" duration="6134000" />
+      <workItem from="1540381081200" duration="2269000" />
+      <workItem from="1540435030645" duration="7586000" />
+      <workItem from="1540475409182" duration="5981000" />
+      <workItem from="1540543893083" duration="1176000" />
+      <workItem from="1540776542906" duration="2470000" />
+      <workItem from="1540812835617" duration="2542000" />
+      <workItem from="1540861296175" duration="3725000" />
+      <workItem from="1540947611613" duration="4122000" />
+      <workItem from="1541064189409" duration="1259000" />
+      <workItem from="1541401781403" duration="3762000" />
+      <workItem from="1541467800377" duration="12104000" />
+      <workItem from="1541552553691" duration="2266000" />
+      <workItem from="1541986016499" duration="2398000" />
+      <workItem from="1542079175237" duration="595000" />
+      <workItem from="1542157105652" duration="15000" />
+      <workItem from="1542166726820" duration="611000" />
+      <workItem from="1542263492145" duration="7458000" />
+      <workItem from="1542328284409" duration="6437000" />
+      <workItem from="1542590050854" duration="19590000" />
+      <workItem from="1542634938337" duration="13000" />
+      <workItem from="1542695898514" duration="1613000" />
+      <workItem from="1542699238436" duration="23000" />
+      <workItem from="1542701580884" duration="35000" />
+      <workItem from="1542702120890" duration="1017000" />
+      <workItem from="1542764669369" duration="103000" />
+      <workItem from="1542778720609" duration="4429000" />
+      <workItem from="1542848123004" duration="4537000" />
+      <workItem from="1542858060000" duration="4722000" />
+      <workItem from="1543194422196" duration="4938000" />
+      <workItem from="1543310012124" duration="1177000" />
+      <workItem from="1543454855322" duration="5604000" />
+      <workItem from="1543545852633" duration="6971000" />
+      <workItem from="1543806263353" duration="2134000" />
+      <workItem from="1543818204709" duration="6849000" />
+      <workItem from="1543887025724" duration="5506000" />
+      <workItem from="1543971169297" duration="52000" />
+      <workItem from="1543974037237" duration="637000" />
+      <workItem from="1544002134653" duration="998000" />
+      <workItem from="1544057551817" duration="692000" />
+      <workItem from="1544083344101" duration="723000" />
+      <workItem from="1544144483238" duration="786000" />
+      <workItem from="1544435669375" duration="614000" />
+      <workItem from="1544492961449" duration="2719000" />
+      <workItem from="1544667167408" duration="1253000" />
+      <workItem from="1544672887698" duration="21000" />
+      <workItem from="1544749386853" duration="27000" />
+      <workItem from="1545016353330" duration="637000" />
+      <workItem from="1545203504816" duration="8752000" />
+      <workItem from="1545268353603" duration="5778000" />
+      <workItem from="1545308920200" duration="42000" />
+      <workItem from="1545617950361" duration="3305000" />
+      <workItem from="1545644211033" duration="612000" />
+      <workItem from="1545809680766" duration="1394000" />
+      <workItem from="1545877820433" duration="7741000" />
+      <workItem from="1545914485365" duration="2000" />
+      <workItem from="1546052261952" duration="775000" />
+      <workItem from="1546072097228" duration="599000" />
+      <workItem from="1546393750922" duration="5135000" />
+      <workItem from="1546501470936" duration="915000" />
+      <workItem from="1546565617271" duration="7000" />
+      <workItem from="1546565637464" duration="9318000" />
+      <workItem from="1546823466957" duration="4889000" />
+      <workItem from="1547445678750" duration="612000" />
+      <workItem from="1547535214378" duration="5775000" />
+      <workItem from="1547600598082" duration="1979000" />
+      <workItem from="1548215588870" duration="1291000" />
+      <workItem from="1548309886668" duration="8787000" />
+      <workItem from="1548343118767" duration="7000" />
+      <workItem from="1548378145967" duration="3834000" />
+      <workItem from="1548395672016" duration="295000" />
+    </task>
+    <task id="LOCAL-00001">
+      <created>1539911620482</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539911620482</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1540776581380</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540776581380</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <created>1540776611805</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540776611805</updated>
+    </task>
+    <task id="LOCAL-00004">
+      <created>1541554118246</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1541554118247</updated>
+    </task>
+    <task id="LOCAL-00005">
+      <created>1541554146046</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1541554146046</updated>
+    </task>
+    <task id="LOCAL-00006">
+      <created>1541554163701</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1541554163701</updated>
+    </task>
+    <task id="LOCAL-00007">
+      <created>1541554181092</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1541554181092</updated>
+    </task>
+    <task id="LOCAL-00008">
+      <created>1542790645221</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1542790645221</updated>
+    </task>
+    <task id="LOCAL-00009">
+      <created>1542790663426</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1542790663426</updated>
+    </task>
+    <task id="LOCAL-00010">
+      <created>1542790708582</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542790708582</updated>
+    </task>
+    <task id="LOCAL-00011">
+      <created>1545895332910</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1545895332910</updated>
+    </task>
+    <task id="LOCAL-00012">
+      <created>1548226392921</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1548226392921</updated>
+    </task>
+    <task id="LOCAL-00013">
+      <created>1548226456692</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1548226456692</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="403403000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.49784017" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21287128" sideWeight="0.32451403" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.051612902" sideWeight="0.49784017" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21287128" sideWeight="0.67548597" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25647947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.49784017" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dist/static/js/app.57cfb007b5653cdee432.js" />
+    <entry file="file://$PROJECT_DIR$/src/store/modules/permission.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/permission.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/user/role.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/hasPermission.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ScrollBar/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/report/busckgather.vue" />
+    <entry file="file://$PROJECT_DIR$/src/components/Tree/selectTree.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/prod.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/busmanager/busStop.vue" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1265">
+          <caret line="631" column="9" lean-forward="false" selection-start-line="631" selection-start-column="9" selection-end-line="631" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/user/index.vue" />
+    <entry file="file://$PROJECT_DIR$/src/views/user/testStudent.vue" />
+    <entry file="file://$PROJECT_DIR$/src/views/layout/components/Sidebar/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/layout/components/Sidebar/SidebarItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/modules/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-760">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/user/webchattxll.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4725">
+          <caret line="177" column="16" lean-forward="false" selection-start-line="177" selection-start-column="6" selection-end-line="177" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/busmanager/busStopArea.vue" />
+    <entry file="file://$PROJECT_DIR$/src/views/report/busckdetail.vue" />
+    <entry file="file://$PROJECT_DIR$/src/views/report/busstopdetail.vue" />
+    <entry file="file://$PROJECT_DIR$/src/api/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/modules/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/login/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/screendp/parkinglot.vue" />
+    <entry file="file://$PROJECT_DIR$/src/views/layout/components/Navbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/layout/components/AppMain.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/getters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/layout/Layout.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/layout/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/busmanager/busCheckInfo.vue" />
+    <entry file="file://$PROJECT_DIR$/src/components/ScrollPane/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/report/busstopsummary.vue" />
+    <entry file="file://$PROJECT_DIR$/src/views/busmanager/bus.vue" />
+    <entry file="file://$PROJECT_DIR$/src/views/user/webchatConfig.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5589">
+          <caret line="207" column="24" lean-forward="false" selection-start-line="207" selection-start-column="17" selection-end-line="207" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/user/driver.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="50" column="79" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/dashboard/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/index.vue" />
+    <entry file="file://$PROJECT_DIR$/src/views/user/codegen.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/student/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/layout/components/TagsView.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="81" lean-forward="false" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/modules/tagsView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/user/user.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1107">
+          <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#el-select#0;n#el-form-item#7;n#el-form#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
