@@ -1,0 +1,50 @@
+package ${package}.service.impl;
+
+
+import ${package}.dao.mysql.${className}Dao;
+import com.alibaba.fastjson.JSONObject;
+import ${package}.service.${className}Service;
+import ${package}.util.CommonUtil;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@Service
+public class ${className}ServiceImpl implements ${className}Service {
+
+    @Autowired
+    private ${className}Dao ${classname}Dao;
+
+    @Override
+    public JSONObject update(JSONObject jsonObject){
+        ${classname}Dao.update(jsonObject);
+        return CommonUtil.successJson();
+    }
+
+    @Override
+    public JSONObject insert(JSONObject jsonObject){
+        ${classname}Dao.insert(jsonObject);
+        return CommonUtil.successJson();
+    }
+
+    @Override
+    public JSONObject list(JSONObject jsonObject){
+        CommonUtil.fillPageParam(jsonObject);
+        int count = ${classname}Dao.count(jsonObject);
+        List<JSONObject> list = ${classname}Dao.listByPage(jsonObject);
+        return CommonUtil.successPage(jsonObject, list, count);
+    }
+
+    @Override
+    public JSONObject delete (Long id){
+        ${classname}Dao.delete(id);
+        return CommonUtil.successJson();
+    }
+}

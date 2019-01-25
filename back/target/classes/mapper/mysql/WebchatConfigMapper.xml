@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shrek.example.dao.mysql.WebchatConfigDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <select id="count" resultType="Integer">
+        SELECT count(0)
+        FROM webchat_config obj
+        WHERE obj.delete_status = '1'
+        <if test="orgPk !='' and orgPk !=null">
+            and  obj.pk_org=#{orgPk}
+        </if>
+    </select>
+
+
+    <select id="listByPage" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+                    obj.id id,                    obj.name name,                    obj.pk_org pkOrg,                    obj.cortid cortid,                    obj.secret secret,                    obj.txlsecret txlsecret,                    obj.delete_status deleteStatus                FROM webchat_config obj
+        WHERE obj.delete_status = '1'
+        <if test="orgPk !='' and orgPk !=null">
+            and  obj.pk_org=#{orgPk}
+        </if>
+        ORDER BY obj.id DESC
+        LIMIT #{offSet}, #{pageRow}
+    </select>
+
+    <select id="listAll" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+        obj.id id,                    obj.name name,                    obj.pk_org pkOrg,                    obj.cortid cortid,                    obj.secret secret,                    obj.txlsecret txlsecret,                    obj.delete_status deleteStatus                FROM webchat_config obj
+        WHERE obj.delete_status = '1'
+        ORDER BY obj.id
+    </select>
+
+    <select id="list" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+        obj.id id,                    obj.name name,                    obj.pk_org pkOrg,                    obj.cortid cortid,                    obj.secret secret,                    obj.txlsecret txlsecret,                    obj.delete_status deleteStatus                FROM webchat_config obj
+        WHERE obj.delete_status = '1'
+        ORDER BY obj.id DESC
+    </select>
+
+    <select id="getByPkOrg" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+        obj.id id,                    obj.name name,                    obj.pk_org pkOrg,                    obj.cortid cortid,                    obj.secret secret,                    obj.txlsecret txlsecret,                    obj.delete_status deleteStatus                FROM webchat_config obj
+        WHERE obj.delete_status = '1' and obj.pk_org = #{orgPk}
+    </select>
+
+    <insert id="insert" parameterType="com.alibaba.fastjson.JSONObject">
+        INSERT INTO webchat_config (
+                name,         pk_org,         cortid,         secret,         txlsecret,         delete_status                 )
+        VALUES
+        (
+                        #{name},                 #{pkOrg},                 #{cortid},                 #{secret},                 #{txlsecret},                 #{deleteStatus}                 );
+    </insert>
+
+    <update id="update" parameterType="com.alibaba.fastjson.JSONObject">
+        UPDATE webchat_config
+        SET
+            name=#{name},           pk_org=#{pkOrg},           cortid=#{cortid},           secret=#{secret},           txlsecret=#{txlsecret},           delete_status=#{deleteStatus}                 WHERE
+        id = #{id};
+    </update>
+
+
+    <update id="delete" parameterType="java.lang.Long">
+        update
+        webchat_config set delete_status=2
+        where
+        id = #{id}
+    </update>
+</mapper>

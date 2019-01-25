@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    mysql:
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://192.168.197.15:3306/shrekdata?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&
+      username: root
+      password:
+    sqlservice:
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      jdbc-url: jdbc:sqlserver://192.168.197.24:1433;DatabaseName=GzbusPB
+      username: gzbuspb
+      password: 
+server:
+  servlet:
+      session:
+          timeout: 3600
+  port: 8090
+mybatis:
+   mapperLocations: classpath:/mapper/*.xml
+prop:
+   upload-folder: C:/images/

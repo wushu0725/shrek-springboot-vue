@@ -1,0 +1,24 @@
+package ${package}.dao;
+
+import com.alibaba.fastjson.JSONObject;
+import ${package}.util.CommonUtil;
+import java.util.List;
+/**
+ * ${comments}
+ * 
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+
+public interface ${className}Dao {
+    int update(JSONObject jsonObject);
+
+    int insert(JSONObject jsonObject);
+
+    List<JSONObject> listByPage(JSONObject jsonObject);
+
+    int delete (Long id);
+
+    int count(JSONObject jsonObject);
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shrek.example.dao.mysql.OrgDao">
+	<resultMap id="orgMap" type="com.shrek.example.util.model.One2Many">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="delete_status" property="deleteStatus"/>
+        <result column="sort" property="sort"/>
+        <result column="usable" property="usable"/>
+        <result column="parentId" property="parentId"/>
+    </resultMap>
+
+    <select id="listOrg" resultMap="orgMap">
+    	select a.*
+    	from sys_org a 
+    	where  a.delete_status = 1
+		<if test="orgPk !='' and orgPk !=null">
+			and  (a.pk_org=#{orgPk} or a.pk_org is null)
+		</if>
+    </select>
+
+	<select id="listOrgPk" resultMap="orgMap">
+		select a.*
+		from sys_org_pk a
+	</select>
+    
+    <insert id="insertOrg" parameterType="com.alibaba.fastjson.JSONObject">
+	    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+	      SELECT LAST_INSERT_ID()
+	    </selectKey>
+    
+        INSERT INTO sys_org (
+			`name`,
+			`delete_status`,
+			`sort`,
+			`usable`,
+			`parentId`,
+			pk_org
+		)
+		VALUES
+			(
+				#{name},
+				#{deleteStatus},
+				#{sort},
+				#{usable},
+				#{parentId,jdbcType=INTEGER},
+				#{orgPk}
+			);
+    </insert>
+    
+    <update id="updateOrg" parameterType="com.alibaba.fastjson.JSONObject">
+        UPDATE `sys_org`
+			SET `name` = #{name},
+			 `delete_status` = #{deleteStatus},
+			 `sort` = #{sort},
+			 `usable` = #{usable},
+			 `parentId` = #{parentId}
+			WHERE
+				`id` = #{id}
+    </update>
+    
+    <delete id="deleteOrg" parameterType="java.lang.Long">
+		delete from
+			sys_org
+		where
+			id = #{id}
+	</delete>
+
+</mapper>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="${package}.dao.mysql.${className}Dao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <select id="count" resultType="Integer">
+        SELECT count(0)
+        FROM ${tableName} obj
+        WHERE obj.delete_status = '1'
+    </select>
+
+
+    <select id="listByPage" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+        #foreach($column in $columns)
+            obj.${column.columnName} ${column.attrname}#if($foreach.hasNext),#end
+        #end
+        FROM ${tableName} obj
+        WHERE obj.delete_status = '1'
+        ORDER BY obj.id DESC
+        LIMIT #{offSet}, #{pageRow}
+    </select>
+
+    <insert id="insert" parameterType="com.alibaba.fastjson.JSONObject">
+        INSERT INTO ${tableName} (
+        #foreach($column in $columns)#if(${column.columnName}!='id')${column.columnName}#if($foreach.hasNext),#end #end
+        #end
+        )
+        VALUES
+        (
+        #foreach($column in $columns)#if(${column.columnName}!='id')
+        #{${column.attrname}}#if($foreach.hasNext),#end #end
+        #end
+        );
+    </insert>
+
+    <update id="update" parameterType="com.alibaba.fastjson.JSONObject">
+        UPDATE ${tableName}
+        SET
+        #foreach($column in $columns) #if(${column.columnName}!='id') ${column.columnName}=#{${column.attrname}}#if($foreach.hasNext),#end
+        #end #end
+        WHERE
+        id = #{id};
+    </update>
+
+
+    <update id="delete" parameterType="java.lang.Long">
+        update
+        ${tableName} set delete_status=2
+        where
+        id = #{id}
+    </update>
+</mapper>

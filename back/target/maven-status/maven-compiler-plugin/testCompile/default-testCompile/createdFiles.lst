@@ -1,0 +1,12 @@
+com\shrek\example\service\BusCheckInfoServiceTest.class
+com\shrek\example\service\LoginServiceTest.class
+com\shrek\example\service\PaiBanInfoServiceTest.class
+com\shrek\example\service\WebChatServiceTest.class
+com\shrek\example\service\BusStopAreaServiceTest.class
+com\shrek\example\service\BusStopAreaInfoServiceTest.class
+com\shrek\example\service\PaiBanLineBusPianServiceTest.class
+com\shrek\example\service\impl\BusServiceImplTest.class
+com\shrek\example\service\WebChatTxlServiceTest.class
+com\shrek\example\service\StudentServiceTest.class
+com\shrek\example\service\UserServiceTest.class
+com\shrek\example\service\PaiBanBusInfoServiceTest.class

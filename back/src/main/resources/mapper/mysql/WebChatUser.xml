@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shrek.example.dao.mysql.WebChatUserDao">
+
+	<select id="countWebChatUser" resultType="Integer">
+        SELECT
+			count(0) from webchat_user	 where 1=1
+		<if test="name!='' and name !=null">
+			and name = #{name}
+		</if> 
+		<if test="userid!='' and userid !=null">
+			and userid = #{userid}
+		</if>  
+        <if test="depId !='' and depId !=null">
+            and dep_id = #{depId}
+        </if>
+		<if test="orgPk !='' and orgPk !=null">
+			and pk_org = #{orgPk}
+		</if>
+    </select>
+
+
+    <select id="getWebChatUser" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+	userId , name , mobile, email , avatar , dep_id from webchat_user	 where 1=1
+		<if test="name!='' and name !=null">
+			and name = #{name}
+		</if> 
+		<if test="userid!='' and userid !=null">
+			and userid = #{userid}
+		</if> 
+        <if test="depId !='' and depId !=null">
+            and dep_id = #{depId}
+        </if>
+		<if test="orgPk !='' and orgPk !=null">
+			and pk_org = #{orgPk}
+		</if>
+        order by userid
+        LIMIT #{offSet}, #{pageRow}
+    </select>
+    
+    
+     <delete id="deleteWebChatUser">
+		delete from
+			webchat_user where pk_org=#{orgPk}
+	</delete>
+
+
+	<insert id="insertWebChatUser" parameterType="com.alibaba.fastjson.JSONObject">
+        INSERT INTO webchat_user ( `userid`, `name`,mobile,email,avatar,dep_id,pk_org)
+        VALUES ( #{userid}, #{name}, #{mobile}, #{email}, #{avatar} ,#{depId},#{orgPk});
+    </insert>
+</mapper>

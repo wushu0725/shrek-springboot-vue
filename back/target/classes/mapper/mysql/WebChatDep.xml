@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shrek.example.dao.mysql.WebChatDepDao">
+
+    <select id="getWebChatDep" resultType="com.alibaba.fastjson.JSONObject">
+        select * from webchat_dep where 1=1
+        <if test="orgPk !='' and orgPk !=null">
+            and pk_org = #{orgPk}
+        </if>
+    </select>
+    
+    
+     <delete id="deleteWebChatDep" parameterType="java.lang.Long">
+		delete from
+			webchat_dep where 1=1
+         <if test="orgPk !='' and orgPk !=null">
+             and pk_org = #{orgPk}
+         </if>
+	</delete>
+
+
+	<insert id="insertWebChatDep" parameterType="com.alibaba.fastjson.JSONObject">
+        INSERT INTO webchat_dep (`id`, `name`, `parentid`,pk_org)
+        VALUES (#{id}, #{name}, #{parentid},#{orgPk});
+    </insert>
+</mapper>

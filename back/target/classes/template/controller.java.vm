@@ -1,0 +1,45 @@
+package ${package}.controller;
+
+import ${package}.service.${className}Service;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import com.alibaba.fastjson.JSONObject;
+
+
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import ${package}.util.CommonUtil;
+import javax.servlet.http.HttpServletRequest;
+
+@RestController
+@RequestMapping("${secondModuleName}")
+public class ${className}Controller {
+
+    @Autowired
+    private ${className}Service ${classname}Service;
+
+    @PostMapping
+    public JSONObject insert(@RequestBody JSONObject requestJson) {
+        return ${classname}Service.insert(requestJson);
+    }
+
+    @PutMapping
+    public JSONObject update(@RequestBody JSONObject requestJson) {
+        return ${classname}Service.update(requestJson);
+    }
+
+    @DeleteMapping
+    public JSONObject delete(HttpServletRequest request) {
+        return ${classname}Service.delete(Long.valueOf(request.getParameter("id")));
+    }
+
+    @GetMapping
+    public JSONObject list(HttpServletRequest request) {
+        JSONObject jsonObject=CommonUtil.request2Json(request);
+        return ${classname}Service.list(jsonObject);
+    }
+}

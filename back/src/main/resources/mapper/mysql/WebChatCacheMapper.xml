@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shrek.example.dao.mysql.WebChatCacheDao">
+
+    <select id="getWebChatCache" resultType="com.alibaba.fastjson.JSONObject">
+        select * from webchatCache a where a.expire_time > SYSDATE() and a.key=#{key} and a.pk_org = #{orgPk}  LIMIT 1
+    </select>
+    
+    
+     <delete id="deleteWebChatCache">
+		delete from
+			webchatCache where  pk_org = #{orgPk}
+	</delete>
+
+
+	<insert id="insertWebChatCache" parameterType="com.alibaba.fastjson.JSONObject">
+        INSERT INTO webchatcache (`key`, `value`, `expire_time`,`create_time`,pk_org)
+        VALUES (#{key}, #{value}, #{expireTime},SYSDATE(),#{orgPk});
+    </insert>
+</mapper>

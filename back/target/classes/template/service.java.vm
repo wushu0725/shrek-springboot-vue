@@ -1,0 +1,22 @@
+package ${package}.service;
+
+
+import com.alibaba.fastjson.JSONObject;
+import java.util.List;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+public interface ${className}Service {
+    JSONObject update(JSONObject jsonObject);
+
+    JSONObject insert(JSONObject jsonObject);
+
+    JSONObject list(JSONObject jsonObject);
+
+    JSONObject delete (Long id);
+}
