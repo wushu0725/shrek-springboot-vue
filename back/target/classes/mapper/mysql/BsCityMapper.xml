@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shrek.example.dao.mysql.BsCityDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <select id="count" resultType="Integer">
+        SELECT count(0)
+        FROM bs_city obj
+        WHERE obj.delete_status = '1'
+    </select>
+
+
+    <select id="listByPage" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+                    obj.id id,                    obj.name name,                    obj.pinyin pinyin,                    obj.area_code areaCode,                    obj.abbr abbr,                    obj.sort sort,                    obj.is_map isMap,                    obj.delete_status deleteStatus,                    obj.longitude longitude,                    obj.latitude latitude,                    obj.hot hot                FROM bs_city obj
+        WHERE obj.delete_status = '1'
+        ORDER BY obj.id DESC
+        LIMIT #{offSet}, #{pageRow}
+    </select>
+
+    <select id="listAll" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+        obj.id id,                    obj.name name,                    obj.pinyin pinyin,                    obj.area_code areaCode,                    obj.abbr abbr,                    obj.sort sort,                    obj.is_map isMap,                    obj.delete_status deleteStatus,                    obj.longitude longitude,                    obj.latitude latitude,                    obj.hot hot                FROM bs_city obj
+        WHERE obj.delete_status = '1'
+        ORDER BY obj.id DESC
+    </select>
+
+    <select id="listHot" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+        obj.id id,                    obj.name name,                    obj.pinyin pinyin,                    obj.area_code areaCode,                    obj.abbr abbr,                    obj.sort sort,                    obj.is_map isMap,                    obj.delete_status deleteStatus,                    obj.longitude longitude,                    obj.latitude latitude,                    obj.hot hot                FROM bs_city obj
+        WHERE obj.delete_status = '1' and hot=1
+        ORDER BY obj.id DESC
+    </select>
+
+    <insert id="insert" parameterType="com.alibaba.fastjson.JSONObject">
+        INSERT INTO bs_city (
+                name,         pinyin,         area_code,         abbr,         sort,         is_map,         delete_status,         longitude,         latitude,         hot                 )
+        VALUES
+        (
+                        #{name},                 #{pinyin},                 #{area_code},                 #{abbr},                 #{sort},                 #{isMap},                 #{deleteStatus},                 #{longitude},                 #{latitude},                 #{hot}                 );
+    </insert>
+
+    <update id="update" parameterType="com.alibaba.fastjson.JSONObject">
+        UPDATE bs_city
+        SET
+            name=#{name},           pinyin=#{pinyin},           area_code=#{areaCode},           abbr=#{abbr},           sort=#{sort},           is_map=#{isMap},           delete_status=#{deleteStatus},           longitude=#{longitude},           latitude=#{latitude},           hot=#{hot}                 WHERE
+        id = #{id};
+    </update>
+
+
+    <update id="delete" parameterType="java.lang.Long">
+        update
+        bs_city set delete_status=2
+        where
+        id = #{id}
+    </update>
+</mapper>
