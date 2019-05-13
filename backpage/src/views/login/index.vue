@@ -22,6 +22,12 @@
           登录
         </el-button>
       </el-form-item>
+      <div style="position:relative">
+        <div class="tips">
+          <span>用户名 : admin</span>
+          <span>密码 : 123456</span>
+        </div>
+      </div>
     </el-form>
   </div>
 </template>

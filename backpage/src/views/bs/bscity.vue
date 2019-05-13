@@ -7,26 +7,51 @@
     </div>
     <el-table :key='tableKey' :data="list" v-loading.body="listLoading" border fit highlight-current-row style="width: 100%">
 
-      <el-table-column width="200px" align="center" label="姓名">
+
+        <el-table-column width="200px" align="center" label="名称">
       <template slot-scope="scope">
         <span>{{scope.row.name}}</span>
       </template>
     </el-table-column>
-        <el-table-column width="200px" align="center" label="性别">
+        <el-table-column width="200px" align="center" label="拼音">
       <template slot-scope="scope">
-        <span>{{scope.row.sex}}</span>
+        <span>{{scope.row.pinyin}}</span>
       </template>
     </el-table-column>
-        <el-table-column width="200px" align="center" label="电话">
+        <el-table-column width="200px" align="center" label="区号">
       <template slot-scope="scope">
-        <span>{{scope.row.phone}}</span>
+        <span>{{scope.row.areaCode}}</span>
+      </template>
+    </el-table-column>
+        <el-table-column width="200px" align="center" label="首字母">
+      <template slot-scope="scope">
+        <span>{{scope.row.abbr}}</span>
+      </template>
+    </el-table-column>
+        <el-table-column width="200px" align="center" label="排序">
+      <template slot-scope="scope">
+        <span>{{scope.row.sort}}</span>
+      </template>
+    </el-table-column>
+        <el-table-column width="200px" align="center" label="">
+      <template slot-scope="scope">
+        <span>{{scope.row.isMap}}</span>
       </template>
     </el-table-column>
 
-
-        <el-table-column width="200px" align="center" label="班级">
+        <el-table-column width="200px" align="center" label="经度">
       <template slot-scope="scope">
-        <span>{{scope.row.classtype}}</span>
+        <span>{{scope.row.longitude}}</span>
+      </template>
+    </el-table-column>
+        <el-table-column width="200px" align="center" label="纬度">
+      <template slot-scope="scope">
+        <span>{{scope.row.latitude}}</span>
+      </template>
+    </el-table-column>
+        <el-table-column width="200px" align="center" label="是否热门">
+      <template slot-scope="scope">
+        <span>{{scope.row.hot}}</span>
       </template>
     </el-table-column>
         <el-table-column fixed="right" align="center" label="操作" width="150"> <template slot-scope="scope">
@@ -37,26 +62,36 @@
       </template> </el-table-column>
     </el-table>
     <div v-show="!listLoading" class="pagination-container">
-      <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page.sync="listQuery.page" :page-sizes="[10,20,30, 50]" :page-size="listQuery.limit" layout="total, sizes, prev, pager, next, jumper" :total="totalCount"> </el-pagination>
+      <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page.sync="listQuery.pageNum" :page-sizes="[10,20,30, 50]" :page-size="listQuery.pageRow" layout="total, sizes, prev, pager, next, jumper" :total="totalCount"> </el-pagination>
     </div>
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
-      <el-form :model="form" :rules="rules" ref="form" label-width="100px">
-      <el-form-item label="姓名" prop="name">
-      <el-input v-model="form.name" placeholder="请输入姓名"></el-input>
+      <el-form :model="form"  ref="form" label-width="100px">
+        <el-form-item label="名称" prop="name">
+      <el-input v-model="form.name" placeholder="请输入名称"></el-input>
     </el-form-item>
-        <el-form-item label="性别" prop="sex">
-      <el-input v-model="form.sex" placeholder="请输入性别"></el-input>
+        <el-form-item label="拼音" prop="pinyin">
+      <el-input v-model="form.pinyin" placeholder="请输入拼音"></el-input>
     </el-form-item>
-        <el-form-item label="电话" prop="phone">
-      <el-input v-model="form.phone" placeholder="请输入电话"></el-input>
-          <el-date-picker
-            type="dates"
-            v-model="value5"
-            placeholder="选择一个或多个日期">
-          </el-date-picker>
+        <el-form-item label="区号" prop="areaCode">
+      <el-input v-model="form.areaCode" placeholder="请输入区号"></el-input>
     </el-form-item>
-            <el-form-item label="班级" prop="classtype">
-      <el-input v-model="form.classtype" placeholder="请输入班级"></el-input>
+        <el-form-item label="首字母" prop="abbr">
+      <el-input v-model="form.abbr" placeholder="请输入首字母"></el-input>
+    </el-form-item>
+        <el-form-item label="排序" prop="sort">
+      <el-input v-model="form.sort" placeholder="请输入排序"></el-input>
+    </el-form-item>
+        <el-form-item label="是否地图" prop="isMap">
+      <el-input v-model="form.isMap" placeholder="请输入"></el-input>
+    </el-form-item>
+          <el-form-item label="经度" prop="longitude">
+      <el-input v-model="form.longitude" placeholder="请输入经度"></el-input>
+    </el-form-item>
+        <el-form-item label="纬度" prop="latitude">
+      <el-input v-model="form.latitude" placeholder="请输入纬度"></el-input>
+    </el-form-item>
+        <el-form-item label="是否热门" prop="hot">
+      <el-input v-model="form.hot" placeholder="请输入是否热门"></el-input>
     </el-form-item>
         </el-form>
       <div slot="footer" class="dialog-footer">
@@ -70,80 +105,17 @@
 
 <script>
   export default {
-    value5:'',
-    name: 'student',
+    name: 'bsCity',
     data() {
       return {
         form: {
-      name : undefined,        sex : undefined,        phone : undefined,          deleteStatus : undefined,        classtype : undefined          },
-        rules: {
-  name: [
-  {
-    required: true,
-    message: '请输入姓名',
-    trigger: 'blur'
-  },
-  {
-    min: 3,
-    max: 20,
-    message: '长度在 3 到 20 个字符',
-    trigger: 'blur'
-  }
-],   sex: [
-  {
-    required: true,
-    message: '请输入性别',
-    trigger: 'blur'
-  },
-  {
-    min: 3,
-    max: 20,
-    message: '长度在 3 到 20 个字符',
-    trigger: 'blur'
-  }
-],   phone: [
-  {
-    required: true,
-    message: '请输入电话',
-    trigger: 'blur'
-  },
-  {
-    min: 3,
-    max: 20,
-    message: '长度在 3 到 20 个字符',
-    trigger: 'blur'
-  }
-],     deleteStatus: [
-  {
-    required: true,
-    message: '请输入',
-    trigger: 'blur'
-  },
-  {
-    min: 3,
-    max: 20,
-    message: '长度在 3 到 20 个字符',
-    trigger: 'blur'
-  }
-],   classtype: [
-  {
-    required: true,
-    message: '请输入班级',
-    trigger: 'blur'
-  },
-  {
-    min: 3,
-    max: 20,
-    message: '长度在 3 到 20 个字符',
-    trigger: 'blur'
-  }
-]        },
+        name : undefined,        pinyin : undefined,        areaCode : undefined,        abbr : undefined,        sort : undefined,        isMap : undefined,        deleteStatus : undefined,        longitude : undefined,        latitude : undefined,        hot : undefined          },
         list: null,
         totalCount: null,
         listLoading: true,
         listQuery: {
-          page: 1,
-          limit: 20,
+          pageNum: 1,
+          pageRow: 20,
           name: undefined
         },
         dialogFormVisible: false,
@@ -163,7 +135,7 @@
           let _this=this;
           this.listLoading = true;
           this.api({
-              url: "/student",
+              url: "/bsCity",
               method: "get"
           }).then(data => {
               _this.listLoading = false;
@@ -201,7 +173,7 @@
             })
             .then(() => {
                 _this.api({
-                    url: "/student"+'?id='+row.id,
+                    url: "/bsCity"+'?id='+row.id,
                     method: "delete"
                 }).then(() => {
                     _this.getList()
@@ -216,7 +188,7 @@
           set[formName].validate(valid => {
               if (valid) {
                   this.api({
-                      url: "student",
+                      url: "bsCity",
                       method: "post",
                       data: this.form
                   }).then(() => {
@@ -238,7 +210,7 @@
           set[formName].validate(valid => {
               if (valid) {
                   this.api({
-                      url: "student",
+                      url: "bsCity",
                       method: "put",
                       data: this.form
                   }).then(() => {

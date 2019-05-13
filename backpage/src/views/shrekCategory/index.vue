@@ -7,28 +7,18 @@
     </div>
     <el-table :key='tableKey' :data="list" v-loading.body="listLoading" border fit highlight-current-row style="width: 100%">
 
-      <el-table-column width="200px" align="center" label="姓名">
+
+        <el-table-column width="200px" align="center" label="商品分类">
       <template slot-scope="scope">
-        <span>{{scope.row.name}}</span>
+        <span>{{scope.row.categoryName}}</span>
       </template>
     </el-table-column>
-        <el-table-column width="200px" align="center" label="性别">
+        <el-table-column width="200px" align="center" label="排序">
       <template slot-scope="scope">
-        <span>{{scope.row.sex}}</span>
-      </template>
-    </el-table-column>
-        <el-table-column width="200px" align="center" label="电话">
-      <template slot-scope="scope">
-        <span>{{scope.row.phone}}</span>
+        <span>{{scope.row.ordernum}}</span>
       </template>
     </el-table-column>
 
-
-        <el-table-column width="200px" align="center" label="班级">
-      <template slot-scope="scope">
-        <span>{{scope.row.classtype}}</span>
-      </template>
-    </el-table-column>
         <el-table-column fixed="right" align="center" label="操作" width="150"> <template slot-scope="scope">
         <el-button  size="small" type="success" @click="handleUpdate(scope.row)">编辑
         </el-button>
@@ -37,28 +27,17 @@
       </template> </el-table-column>
     </el-table>
     <div v-show="!listLoading" class="pagination-container">
-      <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page.sync="listQuery.page" :page-sizes="[10,20,30, 50]" :page-size="listQuery.limit" layout="total, sizes, prev, pager, next, jumper" :total="totalCount"> </el-pagination>
+      <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page.sync="listQuery.pageNum" :page-sizes="[10,20,30, 50]" :page-size="listQuery.pageRow" layout="total, sizes, prev, pager, next, jumper" :total="totalCount"> </el-pagination>
     </div>
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form :model="form" :rules="rules" ref="form" label-width="100px">
-      <el-form-item label="姓名" prop="name">
-      <el-input v-model="form.name" placeholder="请输入姓名"></el-input>
+        <el-form-item label="商品分类" prop="categoryName">
+      <el-input v-model="form.categoryName" placeholder="请输入商品分类"></el-input>
     </el-form-item>
-        <el-form-item label="性别" prop="sex">
-      <el-input v-model="form.sex" placeholder="请输入性别"></el-input>
+        <el-form-item label="排序" prop="ordernum">
+      <el-input v-model="form.ordernum" placeholder="请输入"></el-input>
     </el-form-item>
-        <el-form-item label="电话" prop="phone">
-      <el-input v-model="form.phone" placeholder="请输入电话"></el-input>
-          <el-date-picker
-            type="dates"
-            v-model="value5"
-            placeholder="选择一个或多个日期">
-          </el-date-picker>
-    </el-form-item>
-            <el-form-item label="班级" prop="classtype">
-      <el-input v-model="form.classtype" placeholder="请输入班级"></el-input>
-    </el-form-item>
-        </el-form>
+          </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="cancel('form')">取 消</el-button>
         <el-button v-if="dialogStatus=='create'" type="primary" @click="create('form')">确 定</el-button>
@@ -70,17 +49,16 @@
 
 <script>
   export default {
-    value5:'',
-    name: 'student',
+    name: 'shrekCategory',
     data() {
       return {
         form: {
-      name : undefined,        sex : undefined,        phone : undefined,          deleteStatus : undefined,        classtype : undefined          },
+        categoryName : undefined,        ordernum : undefined,        deleteStatus : undefined          },
         rules: {
-  name: [
+    categoryName: [
   {
     required: true,
-    message: '请输入姓名',
+    message: '请输入商品分类',
     trigger: 'blur'
   },
   {
@@ -89,61 +67,19 @@
     message: '长度在 3 到 20 个字符',
     trigger: 'blur'
   }
-],   sex: [
-  {
-    required: true,
-    message: '请输入性别',
-    trigger: 'blur'
-  },
-  {
-    min: 3,
-    max: 20,
-    message: '长度在 3 到 20 个字符',
-    trigger: 'blur'
-  }
-],   phone: [
-  {
-    required: true,
-    message: '请输入电话',
-    trigger: 'blur'
-  },
-  {
-    min: 3,
-    max: 20,
-    message: '长度在 3 到 20 个字符',
-    trigger: 'blur'
-  }
-],     deleteStatus: [
+],   ordernum: [
   {
     required: true,
     message: '请输入',
     trigger: 'blur'
-  },
-  {
-    min: 3,
-    max: 20,
-    message: '长度在 3 到 20 个字符',
-    trigger: 'blur'
   }
-],   classtype: [
-  {
-    required: true,
-    message: '请输入班级',
-    trigger: 'blur'
-  },
-  {
-    min: 3,
-    max: 20,
-    message: '长度在 3 到 20 个字符',
-    trigger: 'blur'
-  }
-]        },
+]       },
         list: null,
         totalCount: null,
         listLoading: true,
         listQuery: {
-          page: 1,
-          limit: 20,
+          pageNum: 1,
+          pageRow: 20,
           name: undefined
         },
         dialogFormVisible: false,
@@ -152,7 +88,8 @@
           update: '编辑',
           create: '创建'
         },
-        tableKey: 0
+        tableKey: 0,
+        listCategory:[]
       }
     },
     created() {
@@ -163,7 +100,7 @@
           let _this=this;
           this.listLoading = true;
           this.api({
-              url: "/student",
+              url: "/shrekCategory",
               method: "get"
           }).then(data => {
               _this.listLoading = false;
@@ -201,7 +138,7 @@
             })
             .then(() => {
                 _this.api({
-                    url: "/student"+'?id='+row.id,
+                    url: "/shrekCategory"+'?id='+row.id,
                     method: "delete"
                 }).then(() => {
                     _this.getList()
@@ -216,7 +153,7 @@
           set[formName].validate(valid => {
               if (valid) {
                   this.api({
-                      url: "student",
+                      url: "shrekCategory",
                       method: "post",
                       data: this.form
                   }).then(() => {
@@ -238,7 +175,7 @@
           set[formName].validate(valid => {
               if (valid) {
                   this.api({
-                      url: "student",
+                      url: "shrekCategory",
                       method: "put",
                       data: this.form
                   }).then(() => {

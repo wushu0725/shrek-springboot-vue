@@ -64,5 +64,30 @@ export const asyncRouterMap = [
       }
     ]
   },
+  {
+    path: '/bs',
+    component: Layout,
+    redirect: '/bs/bsCity',
+    name: '移动商城',
+    meta: {title: '移动商城', icon: 'tree'},
+    children: [
+      // {
+      //   path: 'bsCity',
+      //   name: '城市管理',
+      //   component: _import('bs/bscity'),
+      //   meta: {title: '城市管理', icon: 'example'},
+      //   menu: 'bsCity'
+      // },
+      {
+        path: 'shrekGoods', name: '商品管理', component: _import('shrekGoods/index'), meta: {title: '商品管理', icon: 'user'}, menu: 'org'
+      },
+      {
+        path: 'shrekCategory', name: '商品分类', component: _import('shrekCategory/index'), meta: {title: '商品分类', icon: 'user'}, menu: 'org'
+      },
+      {
+        path: 'shrekSction', name: '商品栏位', component: _import('shrekSction/index'), meta: {title: '商品栏位', icon: 'user'}, menu: 'org'
+      }
+    ]
+  },
   {path: '*', redirect: '/404', hidden: true}
 ]
