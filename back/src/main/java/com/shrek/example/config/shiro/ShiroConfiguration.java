@@ -51,8 +51,7 @@ public class ShiroConfiguration {
         filterChainDefinitionMap.put("/login/auth", "anon");
         filterChainDefinitionMap.put("/login/logout", "anon");
         filterChainDefinitionMap.put("/images/**", "anon");
-        filterChainDefinitionMap.put("/driveric/**", "anon"); //司机端刷卡请求
-        filterChainDefinitionMap.put("/screen/getscreenbysid", "anon"); 
+        filterChainDefinitionMap.put("/mobile/**", "anon"); //司机端刷卡请求
         filterChainDefinitionMap.put("/error", "anon");
         filterChainDefinitionMap.put("/**", "authc");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);

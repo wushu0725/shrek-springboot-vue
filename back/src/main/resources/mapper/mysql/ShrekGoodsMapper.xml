@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shrek.example.dao.mysql.ShrekGoodsDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <select id="count" resultType="Integer">
+        SELECT count(0)
+        FROM shrek_goods obj
+        WHERE obj.delete_status = '1'
+    </select>
+
+
+    <select id="listByPage" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+                    obj.id id,                    obj.title title,                    obj.intro intro,                    obj.price price,   obj.categoryId, obj.sctionId,  obj.imgPath,                 obj.delete_status deleteStatus                FROM shrek_goods obj
+        WHERE obj.delete_status = '1'
+        ORDER BY obj.id DESC
+        LIMIT #{offSet}, #{pageRow}
+    </select>
+
+    <insert id="insert" parameterType="com.alibaba.fastjson.JSONObject">
+        INSERT INTO shrek_goods (
+                title,         intro,         price,categoryId,sctionId, imgPath,        delete_status                 )
+        VALUES
+        (
+                        #{title},                 #{intro},                 #{price}, #{categoryId},#{sctionId}, #{imgPath},               #{deleteStatus}                 );
+    </insert>
+
+    <update id="update" parameterType="com.alibaba.fastjson.JSONObject">
+        UPDATE shrek_goods
+        SET
+            title=#{title},           intro=#{intro},           price=#{price}, categoryId=#{categoryId} ,sctionId=#{sctionId},imgPath=#{imgPath} ,         delete_status=#{deleteStatus}                 WHERE
+        id = #{id};
+    </update>
+
+
+    <update id="delete" parameterType="java.lang.Long">
+        update
+        shrek_goods set delete_status=2
+        where
+        id = #{id}
+    </update>
+
+
+    <select id="index" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT id,imgPath from  shrek_goods
+        where delete_status=1
+        <if test="sctionId!='' and sctionId!=null">
+            and sctionId = ${sctionId}
+        </if>
+    </select>
+
+    <select id="sction2" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT id,imgPath,price,intro,title from  shrek_goods
+        where delete_status=1
+        <if test="sctionId!='' and sctionId!=null">
+            and sctionId = ${sctionId}
+        </if>
+    </select>
+
+    <select id="sction3" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT id,imgPath,price,intro,title,end from  shrek_goods
+        where delete_status=1
+        <if test="sctionId!='' and sctionId!=null">
+            and sctionId = ${sctionId}
+        </if>
+    </select>
+
+    <resultMap id="asideResult" type="com.shrek.example.util.model.One2Many">
+        <id column="id" property="id"/>
+        <result column="category_name" property="title"/>
+        <collection property="list" ofType="com.alibaba.fastjson.JSONObject">
+            <id column="bid" property="id"/>
+            <result column="imgPath" property="imgPath"/>
+            <result column="title" property="title"/>
+        </collection>
+    </resultMap>
+
+    <select id="aside" resultMap="asideResult">
+        SELECT a.id,a.category_name,b.id bid,b.imgPath,b.title from shrek_category a left join
+                shrek_goods b on a.id=b.categoryId
+    </select>
+
+    <resultMap id="detailResult" type="com.shrek.example.util.model.One2Many">
+        <id column="id" property="id"/>
+        <result column="price" property="price"/>
+        <result column="intro" property="intro"/>
+        <result column="title" property="title"/>
+        <collection property="chose" ofType="com.alibaba.fastjson.JSONObject">
+            <id column="bid" property="id"/>
+            <result column="col" property="col"/>
+            <result column="size" property="size"/>
+        </collection>
+
+    </resultMap>
+
+    <select id="detail" resultMap="detailResult">
+        SELECT a.id,a.price,a.intro,a.title,b.id bid,b.col,b.size from  shrek_goods a
+                 left join shrek_goods_detail b on a.id=b.goodsId
+        where a.delete_status=1 and a.id=#{id}
+    </select>
+    <select id="swiper" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT c.id,c.imgSrc from  shrek_goods_img c
+        where c.delete_status=1 and c.goodsId=#{id}
+    </select>
+</mapper>
