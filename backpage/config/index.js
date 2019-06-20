@@ -1,5 +1,5 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
-var path = require('path')
+var path = require('path');
 module.exports = {
   build: {
     env: require('./prod.env'),
@@ -30,6 +30,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
+      '/act': {
+        target: 'http://127.0.0.1:8090',
+        pathRewrite: {
+          '^/act': '/act'
+        }
+      },
       '/api': {
         target: 'http://127.0.0.1:8090',
         pathRewrite: {
@@ -44,4 +50,4 @@ module.exports = {
     // just be aware of this issue when enabling this option.
     cssSourceMap: false
   }
-}
+};
