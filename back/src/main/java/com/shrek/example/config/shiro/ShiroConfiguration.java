@@ -53,6 +53,10 @@ public class ShiroConfiguration {
         filterChainDefinitionMap.put("/images/**", "anon");
         filterChainDefinitionMap.put("/mobile/**", "anon"); //司机端刷卡请求
         filterChainDefinitionMap.put("/error", "anon");
+        filterChainDefinitionMap.put("/modeler.html", "anon");
+        filterChainDefinitionMap.put("/editor-app/**", "anon");
+        filterChainDefinitionMap.put("/diagram-viewer/**", "anon");
+
         filterChainDefinitionMap.put("/**", "authc");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
         return shiroFilterFactoryBean;

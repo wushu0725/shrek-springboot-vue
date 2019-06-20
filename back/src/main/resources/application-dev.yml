@@ -10,6 +10,8 @@ spring:
       jdbc-url: jdbc:sqlserver://192.168.197.24:1433;DatabaseName=GzbusPB
       username: gzbuspb
       password:
+  activiti:
+      check-process-definitions: false
 server:
   servlet:
       session:

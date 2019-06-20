@@ -1,5 +1,6 @@
 package com.shrek.example;
 
+import org.activiti.spring.boot.SecurityAutoConfiguration;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
@@ -13,7 +14,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @description: SpringBoot启动类
  * @date: 2017/10/24 11:55
  */
-@SpringBootApplication
+@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
 @EnableScheduling
 @MapperScan("com.shrek.example.dao")
 public class MyApplication extends SpringBootServletInitializer {

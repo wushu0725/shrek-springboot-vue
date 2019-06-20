@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shrek.example.dao.mysql.OaLeaveBillDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <select id="count" resultType="Integer">
+        SELECT count(0)
+        FROM oa_leave_bill obj
+        WHERE obj.delete_status = '1'
+    </select>
+
+
+    <select id="listByPage" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+                    obj.id id,                    obj.username username,                    obj.days days,                    obj.content content,                    obj.state state,                    obj.leave_time leaveTime,                    obj.create_time createTime,                    obj.update_time updateTime,                    obj.delete_status deleteStatus,                    obj.tenant_id tenantId                FROM oa_leave_bill obj
+        WHERE obj.delete_status = '1'
+        ORDER BY obj.id DESC
+        LIMIT #{offSet}, #{pageRow}
+    </select>
+
+    <select id="selectById" resultType="com.alibaba.fastjson.JSONObject">
+        SELECT
+        obj.id id,                    obj.username username,                    obj.days days,                    obj.content content,                    obj.state state,                    obj.leave_time leaveTime,                    obj.create_time createTime,                    obj.update_time updateTime,                    obj.delete_status deleteStatus,                    obj.tenant_id tenantId                FROM oa_leave_bill obj
+        WHERE obj.delete_status = '1' and obj.id=#{id}
+    </select>
+
+    <insert id="insert" parameterType="com.alibaba.fastjson.JSONObject">
+        INSERT INTO oa_leave_bill (
+                username,         days,         content,         state,         leave_time,         create_time,         update_time,         delete_status,         tenant_id                 )
+        VALUES
+        (
+                        #{username},                 #{days},                 #{content},                 #{state},                 #{leaveTime},                 #{createTime},                 #{updateTime},                 #{deleteStatus},                 #{tenantId}                 );
+    </insert>
+
+    <update id="update" parameterType="com.alibaba.fastjson.JSONObject">
+        UPDATE oa_leave_bill
+        SET
+            username=#{username},           days=#{days},           content=#{content},           state=#{state},           leave_time=#{leaveTime},           create_time=#{createTime},           update_time=#{updateTime},           delete_status=#{deleteStatus},           tenant_id=#{tenantId}                 WHERE
+        id = #{id};
+    </update>
+
+
+    <update id="delete" parameterType="java.lang.Long">
+        update
+        oa_leave_bill set delete_status=2
+        where
+        id = #{id}
+    </update>
+</mapper>
