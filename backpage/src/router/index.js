@@ -4,8 +4,8 @@ import Router from 'vue-router'
 /* layout */
 import Layout from '../views/layout/Layout'
 
-const _import = require('./_import_' + process.env.NODE_ENV)
-Vue.use(Router)
+const _import = require('./_import_' + process.env.NODE_ENV);
+Vue.use(Router);
 export const constantRouterMap = [
   {path: '/login', component: _import('login/index'), hidden: true},
   {path: '/404', component: _import('404'), hidden: true},
@@ -19,7 +19,7 @@ export const constantRouterMap = [
       path: 'dashboard', component: _import('dashboard/index')
     }]
   }
-]
+];
 export default new Router({
   // mode: 'history', //后端支持可开
   scrollBehavior: () => ({y: 0}),
@@ -71,13 +71,6 @@ export const asyncRouterMap = [
     name: '移动商城',
     meta: {title: '移动商城', icon: 'tree'},
     children: [
-      // {
-      //   path: 'bsCity',
-      //   name: '城市管理',
-      //   component: _import('bs/bscity'),
-      //   meta: {title: '城市管理', icon: 'example'},
-      //   menu: 'bsCity'
-      // },
       {
         path: 'shrekGoods', name: '商品管理', component: _import('shrekGoods/index'), meta: {title: '商品管理', icon: 'user'}, menu: 'org'
       },
@@ -89,5 +82,23 @@ export const asyncRouterMap = [
       }
     ]
   },
+  {
+    path: '/workflow',
+    component: Layout,
+    redirect: '/workflow/workflow',
+    name: '工作流模块',
+    meta: {title: '工作流模块', icon: 'tree'},
+    children: [
+      {
+        path: 'shrekGoods', name: '模板配置', component: _import('flow/index'), meta: {title: '模板配置', icon: 'user'}, menu: 'org'
+      },
+      {
+        path: 'oaLeaveBill', name: '请假管理', component: _import('oaLeaveBill/index'), meta: {title: '请假管理', icon: 'user'}, menu: 'org'
+      },
+      {
+        path: 'myprocess', name: '我的待办', component: _import('myprocess/index'), meta: {title: '我的待办', icon: 'user'}, menu: 'org'
+      }
+    ]
+  },
   {path: '*', redirect: '/404', hidden: true}
-]
+];
